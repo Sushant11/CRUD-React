@@ -1,31 +1,30 @@
 {
   "name": "crud-react",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
-  },
+  "version": "1.0.0",
+  "description": "CRUD React App with Express Server",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client-install": "cd client && npm install",
+    "server-install": "cd server && npm install",
+    "install-both": "concurrently \"npm run client-install\" \"npm run server-install\"",
+    "server": "npm start --prefix server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sushant11/CRUD-React.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "keywords": [
+    "React",
+    "CRUD",
+    "Express"
+  ],
+  "author": "Sushant Chitrakar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sushant11/CRUD-React/issues"
+  },
+  "homepage": "https://github.com/Sushant11/CRUD-React#readme"
 }
